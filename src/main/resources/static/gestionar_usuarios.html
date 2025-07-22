@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestionar Usuarios</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body class="pagina-catalogo">
+        <div class="catalogo-container">
+            <h2 class="titulo-seccion">👥 Gestión de usuarios</h2>
+
+            <div class="botones-usuarios">
+                <button id="verUsuariosBtn" class="volver-btn">Ver todos los usuarios</button>
+                <button onclick="mostrarFormularioBibliotecario()" class="volver-btn">➕ Crear bibliotecario</button>
+            </div>
+
+            <ul id="listaUsuarios" class="grid-catalogo">
+                <!-- Aquí se insertarán los usuarios dinámicamente -->
+            </ul>
+
+            <button onclick="window.location.href = 'inicio.html'" class="volver-btn">Volver al inicio</button>
+        </div>
+
+        <!-- Formulario emergente para crear bibliotecario -->
+        <div id="formulario-bibliotecario" class="popup-formulario" style="display: none;">
+            <h3>Crear nuevo bibliotecario</h3>
+            <input type="text" id="nuevoNombre" placeholder="Nombre completo" />
+            <input type="email" id="nuevoEmail" placeholder="Correo electrónico" />
+            <input type="password" id="nuevaContrasena" placeholder="Contraseña" />
+            <button onclick="crearBibliotecario()">Crear</button>
+            <button onclick="cerrarFormularioBibliotecario()">Cancelar</button>
+        </div>
+
+        <script src="gestionar_usuarios.js"></script>
+    </body>
+</html>

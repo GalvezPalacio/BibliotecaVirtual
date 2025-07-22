@@ -1,0 +1,660 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('img/imagen_biblioteca_portada.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.4); /* más oscuro para que resalte */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 340px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-container input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0088cc;
+}
+.inicio-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.inicio-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inicio-container li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+body.inicio {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('img/imagen_fondo_usuario.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.registro-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.registro-link a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.registro-link a:hover {
+    text-decoration: underline;
+}
+/* Estilos solo para el formulario de registro */
+body #formularioRegistro input[type="text"],
+body #formularioRegistro input[type="email"],
+body #formularioRegistro input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+body #formularioRegistro input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body #formularioRegistro input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.menu-usuario button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 255, 200, 0.5), 0 0 20px rgba(0, 102, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.menu-usuario button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.7), 0 0 28px rgba(0, 102, 255, 0.5);
+}
+.mensaje-bienvenida {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #00ffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #00ffff80;
+    backdrop-filter: blur(4px);
+}
+.alquilado {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.devuelto {
+    color: #ff6666;
+    font-style: italic;
+    font-weight: bold;
+}
+.boton-devolver {
+    margin-left: 10px;
+    width: auto !important;
+    padding: 4px 10px !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.boton-devolver:hover {
+    background-color: #0088cc;
+}
+
+.boton-alquilar {
+    margin-left: 15px;
+    padding: 5px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-alquilar:hover {
+    background-color: #388E3C;
+}
+.grid-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    padding: 2rem 1rem 0 1rem;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.grid-libros li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.titulo-seccion {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.pagina-alquilar .login-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 900px;
+    margin: 5rem auto; /* centrado vertical y horizontal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+body.pagina-alquilar {
+    background: url('img/imagen_biblioteca_portada.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 4rem;
+}
+
+body.pagina-alquilar .login-container {
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1000px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+}
+
+body.pagina-alquilar .titulo-seccion {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+body.pagina-alquilar .grid-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    padding: 1rem;
+    list-style: none;
+    margin: 0 auto 2rem;
+}
+
+body.pagina-alquilar .grid-libros li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.pagina-alquilar .boton-alquilar {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.pagina-alquilar .boton-alquilar:hover {
+    background-color: #388E3C;
+}
+
+body.pagina-alquilar .volver-btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body.pagina-alquilar .volver-btn:hover {
+    background-color: #0088cc;
+}
+.formulario-anadir-libro {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.formulario-anadir-libro h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.formulario-anadir-libro input,
+.formulario-anadir-libro select {
+    width: 100%;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-anadir-libro input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.formulario-anadir-libro input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.boton-anadir {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.boton-anadir:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+.grupo-autor {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: nowrap; /* 👈 línea añadida */
+    margin-bottom: 15px;
+}
+
+
+.grupo-autor input {
+    flex: 1;
+}
+
+.boton-anexo {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    max-width: 40%;
+}
+
+.boton-anexo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.5), 0 0 28px rgba(0, 102, 255, 0.4);
+}
+.grupo-genero {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+
+.grupo-genero input {
+    flex: 1;
+}
+.popup-formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    width: 300px;
+    text-align: center;
+}
+
+.popup-formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.popup-formulario button {
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00aaff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-formulario button:hover {
+    background-color: #0088cc;
+}
+/* Estilos para la página del catálogo completo */
+body.pagina-catalogo {
+    background: url('img/imagen_biblioteca_portada.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 4rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body.pagina-catalogo .catalogo-container {
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1000px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+}
+
+body.pagina-catalogo .titulo-seccion {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+body.pagina-catalogo .grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    padding: 1rem;
+    list-style: none;
+    margin: 0 auto 2rem;
+}
+
+body.pagina-catalogo .grid-catalogo li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Estado del libro en el catálogo */
+.estado-libro.disponible {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.estado-libro.alquilado {
+    color: #ff6666;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body.pagina-catalogo .volver-btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body.pagina-catalogo .volver-btn:hover {
+    background-color: #0088cc;
+}
+
+
+/*.boton-bibliotecario {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-bibliotecario:hover {
+    background-color: #005fa3;
+}*/
+
+/* Estilos para la página del catálogo completo */
+body.pagina-catalogo {
+    background: url('img/imagen_biblioteca_portada.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 4rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body.pagina-catalogo .catalogo-container {
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1000px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+}
+
+body.pagina-catalogo .titulo-seccion {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+body.pagina-catalogo .grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    padding: 1rem;
+    list-style: none;
+    margin: 0 auto 2rem;
+}
+
+body.pagina-catalogo .grid-catalogo li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+}
+
+.estado-libro.disponible {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.estado-libro.alquilado {
+    color: #ff6666;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body.pagina-catalogo .volver-btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.pagina-catalogo .volver-btn:hover {
+    background-color: #0088cc;
+}
+.btn-eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.btn-eliminar:hover {
+    background-color: #cc0000;
+}

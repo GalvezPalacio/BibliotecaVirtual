@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio - Biblioteca Virtual</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body class="inicio">
+        <img id="imagen-fondo" src="" alt="Fondo dinámico" style="display: none;" />
+
+        <div class="login-container">
+            <h2 id="bienvenida">Bienvenido a tu biblioteca</h2>
+
+            <!-- Botones para USUARIO -->
+            <div class="menu-usuario" id="menu-usuario" style="display: none;">
+                <button onclick="window.location.href = 'alquilar.html'">📚 Alquilar libro</button>
+                <button onclick="mostrarAlquileres(); cargarAlquileres()">📖 Mis alquileres</button>
+            </div>
+
+            <!-- Botones para BIBLIOTECARIO -->
+            <div class="menu-usuario" id="menu-bibliotecario" style="display: none;">
+                <button onclick="mostrarFormularioLibro()">➕ Añadir libro</button>
+                <button onclick="window.location.href = 'alquileres.html'">📖 Ver todos los alquileres</button>
+                <button onclick="window.location.href = 'gestionar_usuarios.html'">👤 Gestionar usuarios</button>
+                <button onclick="window.location.href = 'catalogo.html'">📚 Ver catálogo completo</button>
+            </div>
+
+            <!-- Mensaje de bienvenida personalizado -->
+            <p id="mensaje-usuario" class="mensaje-bienvenida"></p>
+
+            <!-- Sección de libros alquilados (solo usuario) -->
+            <div id="seccion-usuario" style="display: none;">
+                <h3>Tus libros alquilados:</h3>
+                <ul id="lista-alquileres"></ul>
+            </div>
+
+            <!-- Formulario para añadir libro (solo bibliotecario) -->
+            <div class="formulario-anadir-libro" id="formulario-anadir-libro" style="display: none;">
+                <h3>Añadir nuevo libro</h3>
+                <input type="text" id="titulo" placeholder="Título del libro" />
+
+                <!-- Formulario emergente para añadir autor -->
+                <div id="popup-autor" class="popup-formulario" style="display: none;">
+                    <h3>Nuevo autor</h3>
+                    <input type="text" id="nombreAutor" placeholder="Nombre del autor" />
+                    <button onclick="añadirAutor()">Añadir</button>
+                    <button onclick="cerrarPopupAutor()">Cancelar</button>
+                </div>
+
+                <!-- Formulario emergente para añadir género -->
+                <div id="popup-genero" class="popup-formulario" style="display: none;">
+                    <h3>Nuevo género</h3>
+                    <input type="text" id="nombreGenero" placeholder="Nombre del género" />
+                    <button onclick="añadirGenero()">Añadir</button>
+                    <button onclick="cerrarPopupGenero()">Cancelar</button>
+                </div>
+
+                <!-- Contenedor para ID del autor + botón "Añadir autor" -->
+                <div class="grupo-autor">
+                    <input type="number" id="autorId" placeholder="ID del autor" />
+                    <button type="button" class="boton-anexo" onclick="mostrarFormularioAutor()">Añadir autor</button>
+                </div>
+
+                <!-- Contenedor para ID del género + botón "Añadir género" -->
+                <div class="grupo-genero">
+                    <input type="number" id="generoId" placeholder="ID del género" />
+                    <button type="button" class="boton-anexo" onclick="mostrarFormularioGenero()">Añadir género</button>
+                </div>
+
+                <input type="number" id="anio" placeholder="Año de publicación" />
+                <button class="boton-anadir" onclick="añadirLibro()">Añadir libro</button>
+            </div>
+
+            <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+
+        <script src="inicio.js"></script>
+    </body>
+</html>

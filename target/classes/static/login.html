@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login - Biblioteca Virtual</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Bienvenido a la Biblioteca</h2>
+            <form id="formularioLogin">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="contrasena" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p id="error" style="color: red;"></p>
+
+            <p class="registro-link">
+                ¿No tienes cuenta?
+                <a href="registro.html">Regístrate aquí</a>
+            </p>
+        </div>
+
+        <script src="login.js"></script>
+    </body>
+</html>

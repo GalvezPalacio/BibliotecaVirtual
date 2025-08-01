@@ -47,7 +47,7 @@ biblioteca/
 
 ## 🙋‍♂️ Autor
 
-Desarrollado por **GabryDev** ([`@GalvezPalacio`](https://github.com/GalvezPalacio)) como proyecto personal y académico del Ciclo DAM.
+Desarrollado por **GabriDev** ([`@GalvezPalacio`](https://github.com/GalvezPalacio)) como proyecto personal y académico del Ciclo DAM.
 
 ---
 
